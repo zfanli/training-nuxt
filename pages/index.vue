@@ -9,12 +9,7 @@
         Welcome to the iView + Nuxt.js template
       </h2>
       <div class="links">
-        <Button type="primary" target="_blank" to="https://nuxtjs.org/"
-          >Documentation</Button
-        >
-        <Button target="_blank" to="https://github.com/nuxt/nuxt.js"
-          >GitHub</Button
-        >
+        <nuxt-link to="/about">About</nuxt-link>
         <Button target="_blank" to="https://www.iviewui.com/">iView</Button>
       </div>
     </div>
