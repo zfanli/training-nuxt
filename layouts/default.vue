@@ -1,8 +1,18 @@
 <template>
   <div>
+    <blog-header />
     <nuxt />
   </div>
 </template>
+
+<script>
+import BlogHeader from '~/components/BlogHeader.vue'
+export default {
+  components: {
+    BlogHeader
+  }
+}
+</script>
 
 <style>
 html {
