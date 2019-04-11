@@ -1,15 +1,8 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="title">
-        渡劫
-      </h1>
-      <h2 class="subtitle">
-        何方道友在此渡劫？
-      </h2>
-      <div class="links">
-        <nuxt-link to="/about">About</nuxt-link>
-      </div>
+      <h1 class="title">渡劫</h1>
+      <h2 class="subtitle">何方道友在此渡劫？</h2>
     </div>
   </section>
 </template>
@@ -17,10 +10,8 @@
 <style>
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .title {
@@ -38,8 +29,5 @@
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
-}
-.links {
-  padding-top: 15px;
 }
 </style>
