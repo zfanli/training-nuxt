@@ -4,7 +4,7 @@
       <nuxt-link to="/">假装这是一个 Logo</nuxt-link>
     </section>
     <section class="header-links">
-      <nuxt-link to="/about">关于</nuxt-link>
+      <nuxt-link to="/about"> <icon type="ios-leaf-outline" />关于 </nuxt-link>
     </section>
   </header>
 </template>
