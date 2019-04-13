@@ -2,6 +2,16 @@
   <article>
     <nuxt />
     <aside>假装这里是菜单</aside>
-    <nuxt-link to="/">回到主页</nuxt-link>
+    <blog-footer />
   </article>
 </template>
+
+<script>
+import BlogFooter from '~/components/BlogFooter.vue'
+
+export default {
+  components: {
+    BlogFooter
+  }
+}
+</script>

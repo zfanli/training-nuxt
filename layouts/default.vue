@@ -1,15 +1,18 @@
 <template>
   <div>
     <blog-header />
-    <nuxt />
+    <nuxt class="top-wrapper" />
+    <blog-footer />
   </div>
 </template>
 
 <script>
 import BlogHeader from '~/components/BlogHeader.vue'
+import BlogFooter from '~/components/BlogFooter.vue'
 export default {
   components: {
-    BlogHeader
+    BlogHeader,
+    BlogFooter
   }
 }
 </script>
@@ -32,5 +35,9 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.top-wrapper {
+  margin-top: 3rem;
 }
 </style>
