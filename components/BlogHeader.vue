@@ -1,18 +1,21 @@
 <template>
   <header class="header">
-    <section class="header-home">
+    <div class="header-home">
       <nuxt-link to="/">假装这是一个 Logo</nuxt-link>
-    </section>
-    <section class="header-links">
+    </div>
+    <div class="header-links">
       <nuxt-link to="/about"> <icon type="ios-leaf-outline" />关于 </nuxt-link>
-    </section>
+    </div>
   </header>
 </template>
 
 <style lang="less">
 .header {
   height: 3rem;
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 100vw;
   box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.4);
 
   .header-home,
