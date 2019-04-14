@@ -4,6 +4,7 @@
     <div class="links">
       <nuxt-link to="/">主页</nuxt-link>
       <nuxt-link to="/about">关于</nuxt-link>
+      <nuxt-link to="/dujie">渡劫</nuxt-link>
     </div>
   </footer>
 </template>

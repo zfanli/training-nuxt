@@ -1,26 +1,11 @@
 <template>
   <section class="container">
     <div>
-      <h1 class="desc">这里应该有一个列表</h1>
-      <h2 class="subtitle">这是首页，起码得有一个列表</h2>
-      <article v-for="item in list" :key="item.title">
-        <header>{{ item.title }}</header>
-      </article>
+      <h1 class="title">渡劫</h1>
+      <h2 class="subtitle">何方道友在此渡劫？</h2>
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      list: new Array(3).fill(0).map((_, i) => ({
-        title: `假装这是第${i + 1}篇文章`
-      }))
-    }
-  }
-}
-</script>
 
 <style>
 .container {
@@ -28,14 +13,16 @@ export default {
   justify-content: center;
   text-align: center;
 }
-.desc {
+.title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
-  color: #333;
+  font-size: 144px;
+  color: #fff;
   letter-spacing: 1px;
+  text-shadow: 4px 4px 0 #333, -2px -2px 0 #333, 4px -2px 0 #333,
+    -2px 4px 0 #333, -1px 3px 0 #333;
 }
 .subtitle {
   font-weight: 300;
