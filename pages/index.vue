@@ -1,10 +1,8 @@
 <template>
-  <section class="container">
+  <section class="index">
     <div>
-      <h1 class="desc">这里应该有一个列表</h1>
-      <h2 class="subtitle">这是首页，起码得有一个列表</h2>
-      <article v-for="item in list" :key="item.title">
-        <header>{{ item.title }}</header>
+      <article v-for="item in list" :key="item.title" class="post-list">
+        <h2>{{ item.title }}</h2>
       </article>
     </div>
   </section>
@@ -22,26 +20,22 @@ export default {
 }
 </script>
 
-<style>
-.container {
+<style lang="less">
+@import '~assets/common.less';
+
+.index {
   display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.desc {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #333;
-  letter-spacing: 1px;
-}
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+
+  .post-list {
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 3px 5px -5px rgba(0, 0, 0, 0.4);
+    .transition();
+
+    &:hover {
+      box-shadow: 0px 3px 16px -5px rgba(0, 0, 0, 0.4);
+      .hover-trans();
+    }
+  }
 }
 </style>
