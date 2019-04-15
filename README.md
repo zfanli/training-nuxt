@@ -4,7 +4,7 @@
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 
@@ -20,3 +20,14 @@ $ yarn run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## Todo
+
+[x] Test change layouts
+[x] Test add routes
+[x] Test add components
+[x] Test integrate with vuex
+[x] Test add less assets
+[ ] Test middleware
+[ ] Test other plugins
+[ ] Test unit test
