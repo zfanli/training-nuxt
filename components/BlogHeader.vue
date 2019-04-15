@@ -9,7 +9,13 @@
       <nuxt-link to="/about"> <Icon type="ios-leaf-outline" />关于 </nuxt-link>
       <div class="i18n">
         <label for="language"><Icon type="md-globe"/></label>
-        <Select id="language" name="i18n" size="small" :value="displayLang">
+        <Select
+          id="language"
+          name="i18n"
+          size="small"
+          :value="displayLang"
+          @on-change="changeLang"
+        >
           <Option v-for="item in lang" :key="item.value" :value="item.value">{{
             item.label
           }}</Option>
@@ -19,10 +25,11 @@
   </header>
 </template>
 <script>
+import { mapState } from 'vuex'
+
 export default {
   data() {
     return {
-      displayLang: 'zh',
       lang: [
         {
           value: 'zh',
@@ -37,6 +44,16 @@ export default {
           label: 'JA'
         }
       ]
+    }
+  },
+  computed: {
+    ...mapState({
+      displayLang: 'lang'
+    })
+  },
+  methods: {
+    changeLang(obj) {
+      this.$store.commit('changeLang', obj)
     }
   }
 }
