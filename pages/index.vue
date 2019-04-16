@@ -16,7 +16,8 @@ export default {
         title: `假装这是第${i + 1}篇文章`
       }))
     }
-  }
+  },
+  transition: 'opacity'
 }
 </script>
 

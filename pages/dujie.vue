@@ -7,6 +7,12 @@
   </section>
 </template>
 
+<script>
+export default {
+  transition: 'opacity'
+}
+</script>
+
 <style>
 .dujie-container {
   display: flex;
