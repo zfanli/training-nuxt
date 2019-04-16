@@ -24,7 +24,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['iview/dist/styles/iview.css'],
+  css: ['iview/dist/styles/iview.css', '~assets/transition.css'],
 
   /*
    ** Plugins to load before mounting the App
