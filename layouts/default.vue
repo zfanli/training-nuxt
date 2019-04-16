@@ -18,8 +18,6 @@ export default {
 </script>
 
 <style lang="less">
-@import '~assets/common.less';
-
 .top-wrapper {
   margin-top: 3rem;
 }
