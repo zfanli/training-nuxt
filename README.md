@@ -41,3 +41,7 @@ It do a framework's work, define some rules and serving for who obeyed its rules
 Layout defines page framework, components just like normal meaning, pages are many web pages and their name would be use as urls. If store is defined, vuex will be injected automatically, and you can commit action at anywhere just like normal use.
 
 Its most benefit is that you do not need to configure such a workspace by yourself, you just write a single page, and it will work for you, like route, create page with template, etc.
+
+## Memo
+
+Global css setting seems can not set a less file. It does not work.
