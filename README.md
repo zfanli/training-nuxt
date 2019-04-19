@@ -44,4 +44,6 @@ Its most benefit is that you do not need to configure such a workspace by yourse
 
 ## Memo
 
-Global css setting seems can not set a less file. It does not work.
+- Global css setting seems can not set a less file. It does not work.
+
+- Seems change files in store cannot be hot deployed, must shut down server once and restart.
